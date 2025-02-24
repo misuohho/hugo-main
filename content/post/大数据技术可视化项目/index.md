@@ -5,7 +5,7 @@ title = '大数据技术可视化项目'
 
 +++
 
-
+### flex使用
 
 ```javascript
  flex-direction: column; #从上到下对齐
@@ -14,7 +14,7 @@ title = '大数据技术可视化项目'
  flex-direction: row-reverse; #从右到左对齐
 ```
 
-### flex使用
+
 
 ```javascript
 .container{
@@ -35,7 +35,7 @@ title = '大数据技术可视化项目'
 }
 ```
 
-![](page/flex.png)
+<img src="page/flex.png" style="zoom:80%;" />
 
 ```javascript
 <template>
@@ -65,7 +65,7 @@ title = '大数据技术可视化项目'
 </style>
 ```
 
-![](page/flex2.png)
+<img src="page/flex2.png" style="zoom:80%;" />
 
 #### .containter为父元素盒子——item为子元素盒子
 
