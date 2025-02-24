@@ -57,7 +57,7 @@ hugo server -D
 hugo new content /content/post/文件夹名（blog内标题名）/文件名.md
 ```
 
-​	创建文章文件    件夹解释
+​	创建文章文件夹解释
 
 ### assets
 
@@ -100,3 +100,24 @@ menu-social下配置可点击的小图标（跳转）
 hugo配置文件中可以加入其他小组件（列如音乐播放器，评论功能）
 
 可以在hugo的官方文档中查看【 [**<u>Welcome | Stack</u>**](https://stack.jimmycai.com/guide/) 】
+
+------
+
+## Github自动化部署
+
+部署教程搜寻github自动化部署
+
+以下为建立完成，进行代码更新操作
+
+```
+git add .
+```
+
+```
+git commit -m "update"
+```
+
+```
+git push
+```
+
