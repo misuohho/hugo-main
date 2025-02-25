@@ -212,7 +212,7 @@ menu:
 
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/misuohho/misuohho.github.io
           params:
               icon: brand-github
 
