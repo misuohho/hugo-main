@@ -71,7 +71,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: giscus
 
         disqusjs:
             shortname:
@@ -81,7 +81,7 @@ params:
             adminLabel:
 
         utterances:
-            repo:
+            repo: 
             issueTerm: pathname
             label:
 
@@ -132,16 +132,19 @@ params:
             siteName: "" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
 
         giscus:
-            repo:
-            repoID:
-            category:
-            categoryID:
-            mapping:
-            lightTheme:
-            darkTheme:
-            reactionsEnabled: 1
-            emitMetadata: 0
-
+            repo: misuohho/misuohho.github.io
+            repoID: misuohho.github.io
+            category: "学习论坛"
+            categoryID: "编程"
+            data-mapping: pathname
+            data-strict: 0
+            data-reactions-enabled: 1
+            data-emit-metadata: 1
+            data-input-position: top
+            data-theme: noborder_dark
+            lang: zh-CN
+            data-loading: lazy
+            crossorigin: anonymous
         gitalk:
             owner:
             admin:
