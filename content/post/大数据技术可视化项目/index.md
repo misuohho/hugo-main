@@ -3,6 +3,8 @@ date = '2025-02-22T16:50:39+08:00'
 draft = true
 title = '大数据技术可视化项目'
 
+image = "page/anli.png"
+
 +++
 
 ### flex使用
