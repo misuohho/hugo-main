@@ -38,6 +38,10 @@
 
     {{ partialCached "footer/footer" . }}
 
+    {{ if not (eq .Params.comments false) }}
+        {{ partial "comments/giscus.html" . }}
+    {{ end }}
+
     {{ partialCached "article/components/photoswipe" . }}
 {{ end }}
 
