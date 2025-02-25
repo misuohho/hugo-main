@@ -133,16 +133,16 @@ params:
 
         giscus:
             repo: misuohho/misuohho.github.io
-            data-repo-id: "R_kgDON-JfOQ"
-            data-category: "hugo + github + giscus"
-            data-category-id: "DIC_kwDON-JfOc4CnTlQ"
+            data-repo-id: R_kgDON-JfOQ
+            data-category:  hugo + github + giscus
+            data-category-id: DIC_kwDON-JfOc4CnTlQ
             data-mapping: pathname
             data-strict: 0
             data-reactions-enabled: 1
             data-emit-metadata: 1
             data-input-position: top
             data-theme: noborder_dark
-            lang: en | zh-CN
+            lang: zh-CN
             data-loading: lazy
             crossorigin: anonymous
         gitalk:
