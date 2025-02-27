@@ -144,7 +144,7 @@ flex在子元素盒子中控制子元素的布局
 </html>
 ```
 
-<img src="page/A.png" style="zoom:75%;" />
+<img src="page/A.png"  />
 
 ```html
 <style>
@@ -193,7 +193,7 @@ grid-template-rows:repeat(2,1fr);
 
 设置网格行和列之间的间距。是grid-column-gap和grid-row-gap的合并简写形式。可以接受两个值：第一个值表示行间距，第二个值表示列间距（如果仅提供一个值，则行间距和列间距相同）。
 
-![](page\屏幕截图_27-2-2025_114040_127.0.0.1.jpeg)
+<img src="page\D.jpeg" style="zoom:80%;" />
 
 将行列合并
 
@@ -248,7 +248,7 @@ grid-template-rows:repeat(2,1fr);
 </html>
 ```
 
-<img src="page\D.jpeg"  />
+<img src="page\E.jpeg"  />
 
 ## 项目流程
 
