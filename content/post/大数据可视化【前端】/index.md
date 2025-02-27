@@ -1,7 +1,7 @@
 +++
 date = '2025-02-22T16:50:39+08:00'
 draft = true
-title = '大数据技术可视化项目'
+title = '大数据可视化【前端】'
 
 image = "page/anli.png"
 
@@ -144,7 +144,7 @@ flex在子元素盒子中控制子元素的布局
 </html>
 ```
 
-<img src="page/A.png"  style="display: block; margin: 0 auto;"/>
+<img src="page/A.png"  style="display: block; margin: 0px auto; zoom: 80%;"/>
 
 ```html
 <style>
@@ -180,14 +180,14 @@ flex在子元素盒子中控制子元素的布局
 </body>
 ```
 
-<img src="page/B.jpeg"  />
+<img src="page/B.jpeg" style="zoom:80%;" />
 
 ```html
 grid-template-columns: repeat(6,1fr);
 grid-template-rows:repeat(2,1fr);
 ```
 
-<img src="page\C.jpeg"  />
+<img src="page\C.jpeg" style="zoom:80%;" />
 
 ### gap属性
 
@@ -248,7 +248,72 @@ grid-template-rows:repeat(2,1fr);
 </html>
 ```
 
-<img src="page\E.jpeg"  />
+<img src="page\E.jpeg" style="zoom:80%;" />
+
+```html
+.item1{
+            grid-area: 1/1/2/3;
+         }
+.item4{
+     grid-area: 3/1/4/3;
+   /* 起始行/起始列/结束行/结束列 */
+         }
+```
+
+效果和分开相同
+
+案例：
+
+```html
+<style>
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        .container{
+            gap: 5px;
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-column-start: 2 ;
+            background-color: orange;
+            
+        }
+        .item{
+            display: flex;
+            background-color: aquamarine;
+            align-items: center;   /* 对齐方式 */
+            justify-content: center;
+            border: 1px solid rebeccapurple;
+         }
+         .item1{
+            grid-area: 1/1/2/4;
+         }
+         .item2{
+            grid-area: 2/1/5/2;
+         }
+         .item3{
+            grid-area: 2/2/3/4;
+         }
+         .item4{
+            grid-area: 3/2/5/4;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+    </div>
+</body>
+</html>
+```
+
+<img src="page/grid-area.jpeg" style="zoom:80%;" />
 
 ## 项目流程
 
