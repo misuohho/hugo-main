@@ -7,7 +7,7 @@ image = "page/anli.png"
 
 +++
 
-## flex布局
+## flex布局 
 
 ### flex-direction属性
 
@@ -315,11 +315,15 @@ grid-template-rows:repeat(2,1fr);
 
 <img src="page/grid-area.jpeg" style="zoom:80%;" />
 
+
+
 ## 项目流程
 
 - ### 拟定题目
 
-- ### 设计框架
+- ### 设计框架布局
+
+- ### 寻找数据
 
 - ### 自己可以先跑一下（后台有数据库）
 
