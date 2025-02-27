@@ -144,7 +144,7 @@ flex在子元素盒子中控制子元素的布局
 </html>
 ```
 
-![A](page\A.png)
+![A](page/A.png)
 
 ```html
 <style>
