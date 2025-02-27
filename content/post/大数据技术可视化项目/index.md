@@ -144,7 +144,7 @@ flex在子元素盒子中控制子元素的布局
 </html>
 ```
 
-![](page/A.png)
+<img src="page/A.png" style="zoom:75%;" />
 
 ```html
 <style>
@@ -180,14 +180,14 @@ flex在子元素盒子中控制子元素的布局
 </body>
 ```
 
-![](page\屏幕截图_27-2-2025_11315_127.0.0.1.jpeg)
+<img src="page/B.jpeg"  />
 
 ```html
 grid-template-columns: repeat(6,1fr);
 grid-template-rows:repeat(2,1fr);
 ```
 
-![](page\屏幕截图_27-2-2025_113536_127.0.0.1.jpeg)
+<img src="page\C.jpeg"  />
 
 ### gap属性
 
@@ -248,7 +248,7 @@ grid-template-rows:repeat(2,1fr);
 </html>
 ```
 
-![](page\屏幕截图_27-2-2025_115815_127.0.0.1.jpeg)
+<img src="page\D.jpeg"  />
 
 ## 项目流程
 
