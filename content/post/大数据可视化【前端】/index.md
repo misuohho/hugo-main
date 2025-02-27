@@ -9,6 +9,8 @@ image = "page/anli.png"
 
 ## flex布局 
 
+- **Flex布局，又称弹性布局，是一种CSS布局方式。它提供了一种更灵活的方式来对容器中的项目进行布局、对齐和分配空间，即使容器大小动态变化，也能保证布局的稳定性。Flex布局的知识要点主要分为容器属性和项目属性两部分。**
+
 ### flex-direction属性
 
 ```javascript
@@ -18,7 +20,10 @@ image = "page/anli.png"
  flex-direction: row-reverse; #从右到左对齐
 ```
 
+### **flex**
 
+- **flex-grow、flex-shrink和flex-basis的简写属性。**
+- **默认值为0 1 auto**
 
 ```javascript
 .container{
@@ -102,14 +107,49 @@ flex在子元素盒子中控制子元素的布局
 }
 ```
 
+### **flex-shrink**
+
+- **定义项目的缩小比例。默认为1，表示当容器空间不足时，项目会按比例缩小。如果设置为0，则项目在空间不足时不会缩小。**
+
+### **flex-basis**
+
+- **定义项目在分配多余空间之前占据的主轴空间（main size）。**
+- **默认值为auto，即项目的本来大小。也可以设置为具体的长度值。**
+
+### **align-self**
+
+- **允许单个项目有与其他项目不一样的对齐方式。**
+- **l 可选值与align-items相同，但此属性仅作用于单个项目，可以覆盖容器的align-items属性。**
+
 ### flex-wrap
 
-- 定义容器内的项目是否可换行。
-- 可选值：nowrap（默认值，不换行）、wrap（换行，第一行在上方）、wrap-reverse（换行，第一行在下方）。
+- **定义容器内的项目是否可换行。**
+- **可选值：nowrap（默认值，不换行）、wrap（换行，第一行在上方）、wrap-reverse（换行，第一行在下方）。**
+
+### **flex-flow**
+
+- **flex-direction和flex-wrap的简写属性**
 
 ## Grid布局
 
- 
+**Grid布局是CSS中一种强大的二维布局系统，它允许开发者将页面划分为行和列，并指定元素在这些行和列中的位置。以下是对Grid布局知识要点的归纳，分为容器属性和项目属性，并附上示例：**
+
+### **display**属性
+
+-  **grid：将元素设置为块级网格容器。**
+-  **inline-grid：将元素设置为行内网格容器。**
+-  **subgrid：继承父元素的grid布局。**
+
+### **grid-template-columns/grid-template-rows属性**
+
+-  **定义网格的列数和行数及其大小。可以使用长度单位（如px、em等）、百分比（%）或fr单位（表示剩余空间的比例分配）。**
+-  **示例：.grid-container { display: grid; grid-template-columns: 100px 1fr 2fr; grid-template-rows: repeat(3, 100px); }**
+
+#### <u>**grid-column/grid-row**</u>
+
+*是grid-column-start和grid-column-end（或grid-row-start和grid-row-end）的简写形式。*
+
+*示例：.item { grid-column: 2 / 4; grid-row: 1 / 3; } 或 .item { grid-column: span 2; grid-row: span 1; }（表示跨越2列，1行）*
 
 ```html
 <!DOCTYPE html>
@@ -191,7 +231,7 @@ grid-template-rows:repeat(2,1fr);
 
 ### gap属性
 
-设置网格行和列之间的间距。是grid-column-gap和grid-row-gap的合并简写形式。可以接受两个值：第一个值表示行间距，第二个值表示列间距（如果仅提供一个值，则行间距和列间距相同）。
+- **设置网格行和列之间的间距。是grid-column-gap和grid-row-gap的合并简写形式。可以接受两个值：第一个值表示行间距，第二个值表示列间距（如果仅提供一个值，则行间距和列间距相同）。**
 
 <img src="page\D.jpeg" style="zoom:80%;" />
 
@@ -249,6 +289,21 @@ grid-template-rows:repeat(2,1fr);
 ```
 
 <img src="page\E.jpeg" style="zoom:80%;" />
+
+### **grid-template-areas属性**
+
+- **通过命名网格区域来布局网格项目。需要在子元素上使用grid-area属性指定其所属区域。**
+- **示例：.grid-container { display: grid; grid-template-columns: repeat(3, 100px); grid-template-rows: repeat(3, 100px); grid-template-areas: 'a a a' 'b c d' 'e e f'; } .item1 { grid-area: a; }**
+
+#### <u>***grid-column-start/grid-column-end/grid-row-start/grid-row-end***</u>
+
+-  *通过指定项目在网格中的起始和结束行列位置来定位项目。*
+-  *示例：.item { grid-column-start: 2; grid-column-end: 4; grid-row-start: 1; grid-row-end: 3; }*
+
+####  **grid-area**
+
+- *直接定义网格区域，可以指定项目的起始行列、跨越行列数或命名区域。*
+- *示例：.item { grid-area: 2 / 2 / span 2 / span 2; } 或 .item { grid-area: namedArea; }（namedArea为grid-template-areas中定义的命名区域）*
 
 ```html
 .item1{
@@ -315,15 +370,26 @@ grid-template-rows:repeat(2,1fr);
 
 <img src="page/grid-area.jpeg" style="zoom:80%;" />
 
+### **grid-auto-flow属性**
 
+- **设置容器子元素的放置在网格中的顺序。默认值是row，即“先行后列”，也可以设为column，变成“先列后行”**
+
+### **grid-auto-columns/grid-auto-rows**
+
+- **定义容器中多余网格的列宽、行高**
+
+### **place-self**
+
+- **设置某个项目的对齐方式，可以覆盖容器级别的对齐设置。**
+- **示例：.item { place-self: center; }（表示在单元格中居中对齐）**
 
 ## 项目流程
 
-- ### 拟定题目
+### 拟定题目
 
-- ### 设计框架布局
+### 设计框架布局
 
-- ### 寻找数据
+### 寻找数据
 
-- ### 自己可以先跑一下（后台有数据库）
+### 自己可以先跑一下（后台有数据库）
 
