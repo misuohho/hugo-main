@@ -144,7 +144,7 @@ flex在子元素盒子中控制子元素的布局
 </html>
 ```
 
-<img src="page/A.png"  />
+<img src="page/A.png"  style="display: block; margin: 0 auto;"/>
 
 ```html
 <style>
