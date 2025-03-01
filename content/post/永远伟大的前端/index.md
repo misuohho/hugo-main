@@ -121,3 +121,152 @@ git commit -m "update"
 git push
 ```
 
+
+
+------
+
+## 零碎的修改
+
+### 布局修改
+
+```scss
+// 在 /assets/scss/grid.scss 中修改 left-sidebar 和 right-sidebar 的描述
+.container {
+    margin-left: auto;
+    margin-right: auto;
+
+    .left-sidebar {
+        order: -3;
+        // max-width: var(--left-sidebar-max-width);
+        max-width: 10%;
+    }
+
+    .right-sidebar {
+        order: -1;
+        // max-width: var(--right-sidebar-max-width);
+        max-width: 20%;
+        /// Display right sidebar when min-width: lg
+        @include respond(lg) {
+            display: flex;
+        }
+    }
+    // 文章左右部分占显示区域百分比修改成30%
+```
+
+### 归档页面两栏
+
+```scss
+@media (min-width: 1024px) {
+    .article-list--compact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: none;
+      box-shadow: none;
+      gap: 1rem;
+  
+      article {
+        background: var(--card-background);
+        border: none;
+        box-shadow: var(--shadow-l2);
+        margin-bottom: 8px;
+        border-radius: 16px;
+      }
+    }
+  }
+```
+
+### 归档页面卡片缩放
+
+```scss
+.article-list--tile article {
+    transition: .6s ease;
+  }
+  
+  .article-list--tile article:hover {
+    transform: scale(1.03, 1.03);
+  }
+```
+
+###  友情链接三栏
+
+```scss
+@media (min-width: 1024px) {
+    .article-list--compact.links {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      background: none;
+      box-shadow: none;
+      gap: 1rem;
+  
+      article {
+        background: var(--card-background);
+        border: none;
+        box-shadow: var(--shadow-l2);
+        margin-bottom: 8px;
+        border-radius: var(--card-border-radius);
+  
+        &:nth-child(odd) {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+```
+
+### 主页布局间距调整
+
+```scss
+.main-container {
+    gap: 50px; //文章宽度
+  
+    @include respond(md) {
+      padding: 0 30px;
+      gap: 40px; //中等屏幕时的文章宽度
+    }
+  }
+  
+  .related-contents {
+    overflow-x: visible; //显示隐藏的图标
+    padding-bottom: 15px;
+  }
+  /*------------------右侧导航栏--------------*/
+```
+
+### 搜索菜单动画
+
+```scss
+.search-form.widget {
+    transition: transform 0.6s ease;
+  }
+  
+  .search-form.widget:hover {
+    transform: scale(1.1, 1.1);
+  }
+```
+
+### 归档小图标放大动画
+
+```scss
+.widget.archives .widget-archive--list {
+    transition: transform .3s ease;
+  }
+  
+  .widget.archives .widget-archive--list:hover {
+    transform: scale(1.05, 1.05);
+  }
+```
+
+### 右侧标签放大动画
+
+```scss
+.tagCloud .tagCloud-tags a {
+    border-radius: 10px;
+    font-size: 1.4rem;
+    transition: transform .3s ease;
+  }
+  
+  .tagCloud .tagCloud-tags a:hover {
+    transform: scale(1.1, 1.1);
+  }
+```
+
