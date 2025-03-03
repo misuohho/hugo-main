@@ -10,16 +10,23 @@ DefaultContentLanguage: zh-cn
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
-hasCJKLanguage: true
+hasCJKLanguage: false
 
 languages:
  zh-cn:
         languageName: 中文
         title: 闪电大绵羊'Blog
-        weight: 2
+        weight: 1
         params:
             sidebar:
                 subtitle: 欢迎学习
+ en:
+        languageName: English
+        title: misuohho'Blog
+        weight: 2
+        params:
+            sidebar:
+                subtitle: Welcome, scholar!
 
 services:
     # Change it to your Disqus shortname before using

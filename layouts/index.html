@@ -5,8 +5,27 @@
     {{ $pag := .Paginate ($filtered) }}
 
     <section class="article-list">
+        <!-- 首页欢迎字幅 -->
+        <div class="welcome">
+            <p style="font-size: 2rem; text-align: center; font-weight: bold">
+                <span class="shake">🤗</span>
+                <span class="jump-text1"> 欢迎</span>
+                <span class="jump-text2"> 来到</span>
+                <span class="jump-text3" style="color:#e99312">Mi</span><span class="jump-text4"
+                    style="color:#e99312">s</span><span class="jump-text5" style="color:#e99312">u</span><span
+                    class="jump-text6" style="color:#e99312">oh</span><span class="jump-text7"
+                    style="color:#e99312">ho</span><span class="jump-text8" style="color:#e99312">'s</span>
+                <span class="jump-text9" style="color:#e99312">Blog</span>
+            </p>
+                <strong><hr></strong>
+            <p style="font-size: 2rem; text-align: center; font-weight: bold">
+                <span class="jump-text10" style="color:#fffcfd">本</span><span class="jump-text11" style="color:#ffa3bd">博客</span><span class="jump-text12" style="color:#ffffff">分为</span><span class="jump-text13" style="color:#ffa3bd">英语</span><span class="jump-text14" style="color:#ffffff">和</span><span class="jump-text15" style="color:#ffa3bd">中文</span><span class="jump-text16" style="color:#ffffff">两个</span><span class="jump-text17" style="color:#ffa3bd">板块</span>
+                <span class="jump-text18" style="color:#fee1e9">切换</span><span class="jump-text19" style="color:#fee1e9">语言</span><span class="jump-text20" style="color:#fee1e9">即可切换板块</span>
+            </p>
+        </div>
+        <!-- 首页欢迎字幅 -->
         {{ range $index, $element := $pag.Pages }}
-            {{ partial "article-list/default" . }}
+        {{ partial "article-list/default" . }}
         {{ end }}
     </section>
 
