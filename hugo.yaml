@@ -26,7 +26,7 @@ languages:
         weight: 2
         params:
             sidebar:
-                subtitle: Welcome, scholar!
+                subtitle: Welcome,scholar!
 
 services:
     # Change it to your Disqus shortname before using

@@ -3,7 +3,8 @@ date = '2025-03-03T12:39:16+08:00'
 draft = true
 title = 'All Black Myth Wukong Voice Actors & Cast List'
 
-image = "wk.jpg"
+image = "wukong/simei.jpg"
+
 
 +++
 

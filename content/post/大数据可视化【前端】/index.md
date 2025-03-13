@@ -383,6 +383,142 @@ grid-template-rows:repeat(2,1fr);
 - **设置某个项目的对齐方式，可以覆盖容器级别的对齐设置。**
 - **示例：.item { place-self: center; }（表示在单元格中居中对齐）**
 
+
+
+## Echarts
+
+官网网址：[Apache ECharts](https://echarts.apache.org/zh/index.html)
+
+安装插件：
+
+```vue
+yarn add echarts axios
+```
+
+在组件文件夹建立chart文件夹(存放图表组件)
+
+### 可视化图的使用
+
+1. 引入
+
+2. 在template内导入容器
+
+   ```vue
+   <template>
+   <div ref="chart" style="width: 100%;height:400px;"></div>
+   </template>
+   ```
+
+3. 写入图像配置
+
+   ```vue
+   <script setup>
+   import { ref, onMounted,reactive } from 'vue';
+   import * as echarts from 'echarts';
+   let chart = ref() //定义一个变量chart响应式数据，用于存放echarts实例
+   onMounted(()=>{
+       chartInit()
+   }) //挂载到chartInit上
+   function chartInit(){
+       var myChart = echarts.init(chart.value) //chart.value获取到的是div元素，然后初始化echarts实例
+       var option = {
+           title:{
+               text:'我的第一个图',
+               link:'www.baidu.com'
+           },
+           tooltip:{},//提示框
+           legend:{
+           },//图例
+           xAxis:{
+               data:['一月','二月','三月','四月','五月']
+           }
+           ,//x轴
+           yAxis:{
+   
+           },//y轴
+           series:[   
+               {
+                   name:'月度排名',
+                   type:'bar',
+                   data:[20,30,40,50,60]
+           }//数据
+       ]
+       }
+   myChart.setOption(option) //设置图表的配置项和数据
+   }
+   
+   </script>
+   ```
+
+### 主题使用
+
+### 扩展插件的使用
+
+加时间，天气预报，选项卡
+
+### Echarts图表
+
+y轴双轴，x轴双轴的设置
+
+```javascript
+需要const colors = [.....] //颜色数组
+option = {
+....
+yAxis: [{
+            type: 'value',
+            name: '数量',
+            position: 'right',
+            axisLine: {
+                show: true,
+                lineStyle: {
+                    color: colors[0]
+                }
+            }
+        }, {
+            type: 'value',
+            name: '百分比',
+            alignTicks: true,
+            axisLine: {
+                show: true,
+                lineStyle: {
+                    color: colors[2]
+                }
+            }
+        }]
+....
+}
+```
+
+```javascript
+xAxis: [
+    {
+      type: 'category',
+      data: ['2016-1', '2016-2', '2016-3', '2016-4', '2016-5', '2016-6', '2016-7', '2016-8', '2016-9', '2016-10', '2016-11', '2016-12']
+    },
+    {
+      type: 'category',
+      data: ['2015-1', '2015-2', '2015-3', '2015-4', '2015-5', '2015-6', '2015-7', '2015-8', '2015-9', '2015-10', '2015-11', '2015-12']
+    }
+  ]
+```
+
+图像布局
+
+```
+var option = {
+        grid: {
+            top: '15%',
+            left: '3%',
+            right: '4%',
+            bottom:  '3%',
+            containLabel: true //包含坐标轴的刻度标签
+        }
+  ...
+  }
+```
+
+
+
 ## 项目流程
 
 ### 拟定题目
@@ -390,6 +526,8 @@ grid-template-rows:repeat(2,1fr);
 ### 设计框架布局
 
 ### 寻找数据
+
+连接数据库试运行
 
 ### 自己可以先跑一下（后台有数据库）
 
