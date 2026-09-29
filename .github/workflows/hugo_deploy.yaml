@@ -1,64 +1,64 @@
-name: deploy
+# name: deploy
 
-# 代码提交到main分支时触发github action
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-        - name: Checkout
-          uses: actions/checkout@v4
-          with:
-              fetch-depth: 0
-
-        - name: Setup Hugo
-          uses: peaceiris/actions-hugo@v3
-          with:
-              hugo-version: "latest"
-              extended: true
-
-        - name: Build Web
-          run: hugo -D
-
-        - name: Deploy Web
-          uses: peaceiris/actions-gh-pages@v4
-          with:
-              PERSONAL_TOKEN: ${{ secrets.TOKEN }}
-              EXTERNAL_REPOSITORY: misuohho/misuohho.github.io
-              PUBLISH_BRANCH: main
-              PUBLISH_DIR: ./public
-              commit_message: auto deploy
-
-# name: update
-
+# # 代码提交到main分支时触发github action
 # on:
 #   push:
-#     branches: [ main ]
+#     branches:
+#       - main
 
 # jobs:
 #   deploy:
 #     runs-on: ubuntu-latest
 #     steps:
-#       - uses: actions/checkout@v4
-#         with:
-#           submodules: true 
-#           fetch-depth: 0
+#         - name: Checkout
+#           uses: actions/checkout@v4
+#           with:
+#               fetch-depth: 0
 
-#       - name: Setup Hugo
-#         uses: peaceiris/actions-hugo@v3
-#         with:
-#           hugo-version: '0.144.2'
-#           extended: true
+#         - name: Setup Hugo
+#           uses: peaceiris/actions-hugo@v3
+#           with:
+#               hugo-version: "latest"
+#               extended: true
 
-#       - name: Build
-#         run: hugo --gc --minify
+#         - name: Build Web
+#           run: hugo -D
 
-#       - name: Deploy
-#         uses: peaceiris/actions-gh-pages@v4
-#         with:
-#           github_token: ${{ secrets.GITHUB_TOKEN }}
-#           publish_dir: ./public
+#         - name: Deploy Web
+#           uses: peaceiris/actions-gh-pages@v4
+#           with:
+#               PERSONAL_TOKEN: ${{ secrets.TOKEN }}
+#               EXTERNAL_REPOSITORY: misuohho/misuohho.github.io
+#               PUBLISH_BRANCH: main
+#               PUBLISH_DIR: ./public
+#               commit_message: auto deploy
+
+name: update
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true 
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.144.2'
+          extended: true
+
+      - name: Build
+        run: hugo --gc --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
