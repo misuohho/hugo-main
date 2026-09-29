@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>闪电大绵羊'Blog</title><link>https://misuohho.github.io/</link><description>Recent content on 闪电大绵羊'Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Misuohho_blog</copyright><lastBuildDate>Tue, 25 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://misuohho.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>更新日志</title><link>https://misuohho.github.io/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</link><pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate><guid>https://misuohho.github.io/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</guid><description>&lt;hr>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">&lt;strong>更新内容&lt;/strong>&lt;/th>
+&lt;th style="text-align: center">&lt;strong>备注&lt;/strong>&lt;/th>
+&lt;th style="text-align: center">&lt;strong>更新时间&lt;/strong>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">&lt;em>&lt;strong>更新加载动画&lt;/strong>&lt;/em>&lt;/td>
+&lt;td style="text-align: center">&lt;em>&lt;strong>代码比较多，和课上上的有交集&lt;/strong>&lt;/em>&lt;/td>
+&lt;td style="text-align: center">&lt;em>&lt;strong>2025-02-28&lt;/strong>&lt;/em>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;em>&lt;strong>更新目录折叠&lt;/strong>&lt;/em>&lt;/td>
+&lt;td style="text-align: center">&lt;em>&lt;strong>学习大佬的非常好用&lt;/strong>&lt;/em>🥰&lt;/td>
+&lt;td style="text-align: center">&lt;em>&lt;strong>2025-02-27&lt;/strong>&lt;/em>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;em>&lt;strong>更新字体&lt;/strong>&lt;/em>&lt;/td>
+&lt;td style="text-align: center">&lt;em>&lt;strong>学习大佬更改字体&lt;/strong>&lt;/em>&lt;/td>
+&lt;td style="text-align: center">&lt;em>&lt;strong>2025-02-27&lt;/strong>&lt;/em>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;em>&lt;strong>增加博客评论功能&lt;/strong>&lt;/em>&lt;/td>
+&lt;td style="text-align: center">&lt;em>&lt;strong>Giscus评论生效比较慢，需要等待服务器上传，第三方插件不太稳定&lt;/strong>&lt;/em>&lt;/td>
+&lt;td style="text-align: center">&lt;em>&lt;strong>2025-02-25&lt;/strong>&lt;/em>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;em>&lt;strong>增加博客更新日志&lt;/strong>&lt;/em>&lt;/td>
+&lt;td style="text-align: center">&lt;em>&lt;strong>/&lt;/strong>&lt;/em>&lt;/td>
+&lt;td style="text-align: center">&lt;em>&lt;strong>2025-02-25&lt;/strong>&lt;/em>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;em>&lt;strong>更新为netlify托管&lt;/strong>&lt;/em>&lt;/td>
+&lt;td style="text-align: center">&lt;em>&lt;strong>网站响应速度加快加快加加快！域名更容易记住（不过我原本的也不错）&lt;/strong>&lt;/em>&lt;/td>
+&lt;td style="text-align: center">&lt;em>&lt;strong>2025-02-25&lt;/strong>&lt;/em>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr></description></item><item><title>关于</title><link>https://misuohho.github.io/%E5%85%B3%E4%BA%8E/</link><pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate><guid>https://misuohho.github.io/%E5%85%B3%E4%BA%8E/</guid><description>&lt;p>This is a test page for i18n support.&lt;/p></description></item><item><title>归档</title><link>https://misuohho.github.io/archives/</link><pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate><guid>https://misuohho.github.io/archives/</guid><description/></item><item><title>绵羊链接</title><link>https://misuohho.github.io/%E7%BB%B5%E7%BE%8A%E9%93%BE%E6%8E%A5/</link><pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate><guid>https://misuohho.github.io/%E7%BB%B5%E7%BE%8A%E9%93%BE%E6%8E%A5/</guid><description>&lt;p>To use this feature, add &lt;code>links&lt;/code> section to frontmatter.&lt;/p>
+&lt;p>This page&amp;rsquo;s frontmatter:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">links&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">GitHub&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">description&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">GitHub is the world&amp;#39;s largest software development platform.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">website&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://github.com&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">TypeScript&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">description&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">website&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://www.typescriptlang.org&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ts-logo-128.jpg&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>image&lt;/code> field accepts both local and external images.&lt;/p></description></item><item><title>搜索</title><link>https://misuohho.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://misuohho.github.io/search/</guid><description/></item></channel></rss>
